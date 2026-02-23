@@ -18,6 +18,8 @@
         .service-card:hover { transform: translateY(-8px); }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .animate-fade-in { animation: fadeIn 0.6s ease-out; }
+        .brand-logo { filter: grayscale(100%); transition: filter 0.3s ease; opacity: 0.7; }
+        .brand-logo:hover { filter: grayscale(0%); opacity: 1; }
     </style>
 </head>
 <body class="bg-white">
@@ -201,31 +203,52 @@
                 </div>
             </div>
             
-            <div class="mt-16 bg-blue-900 text-white rounded-2xl p-8 text-center animate-fade-in">
-                <h3 class="text-3xl font-bold mb-4">Servise Gelen Markalar</h3>
-                <div class="flex flex-wrap justify-center gap-6 text-lg">
-                    <span>Arçelik</span>
-                    <span>•</span>
-                    <span>Bosch</span>
-                    <span>•</span>
-                    <span>Siemens</span>
-                    <span>•</span>
-                    <span>Beko</span>
-                    <span>•</span>
-                    <span>Samsung</span>
-                    <span>•</span>
-                    <span>LG</span>
-                    <span>•</span>
-                    <span>Vestel</span>
-                    <span>•</span>
-                    <span>Altus</span>
-                    <span>•</span>
-                    <span>Vaillant</span>
-                    <span>•</span>
-                    <span>Baymak</span>
-                    <span>•</span>
-                    <span>Protherm</span>
+            <div class="mt-16 bg-white rounded-2xl p-8 shadow-inner animate-fade-in">
+    <h3 class="text-3xl font-bold mb-8 text-center text-blue-900">Servis Sağladığımız Markalar</h3>
+    
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
+                    
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Arcelik_Logo.svg/2560px-Arcelik_Logo.svg.png" alt="Arçelik" class="h-8 object-contain">
+                    </div>
+
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bosch-logo.svg/1280px-Bosch-logo.svg.png" alt="Bosch" class="h-8 object-contain">
+                    </div>
+
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Beko_logo.svg/1280px-Beko_logo.svg.png" alt="Beko" class="h-8 object-contain">
+                    </div>
+
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" alt="Samsung" class="h-6 object-contain">
+                    </div>
+
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siemens-logo.svg/2560px-Siemens-logo.svg.png" alt="Siemens" class="h-6 object-contain">
+                    </div>
+
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Vestel_logo.svg/1280px-Vestel_logo.svg.png" alt="Vestel" class="h-6 object-contain">
+                    </div>
+
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LG_logo_%282015%29.svg/1024px-LG_logo_%282015%29.svg.png" alt="LG" class="h-8 object-contain">
+                    </div>
+
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Vaillant_logo.svg/1280px-Vaillant_logo.svg.png" alt="Vaillant" class="h-8 object-contain">
+                    </div>
+
+                    <div class="brand-logo">
+                        <img src="https://vignette.wikia.nocookie.net/logopedia/images/e/ec/Baymak.png" alt="Baymak" class="h-8 object-contain">
+                    </div>
+
                 </div>
+                
+                <p class="mt-8 text-center text-gray-500 text-sm italic">
+                    * Ve diğer tüm markalar için yedek parça desteği ile hizmet vermekteyiz.
+                </p>
             </div>
         </div>
     </section>
