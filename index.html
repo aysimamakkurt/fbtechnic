@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB Teknik - Beyaz Eşya & Kombi Servisi</title>
+    <meta name="description" content="15 yıllık tecrübemizle tüm marka beyaz eşya, kombi ve klima tamiri. 7/24 acil servis hizmeti.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        }
+
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .service-card img {
+            transition: transform 0.5s ease;
+        }
+
+        .service-card:hover img {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                        <span class="text-xl">🔧</span>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-xl">FB Teknik</h1>
+                        <p class="text-xs text-blue-200">Beyaz Eşya & Kombi Servisi</p>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex items-center gap-6">
+                    <a href="#hizmetler" class="hover:text-orange-400 transition">Hizmetler</a>
+                    <a href="#yorumlar" class="hover:text-orange-400 transition">Yorumlar</a>
+                    <a href="#iletisim" class="hover:text-orange-400 transition">İletişim</a>
+                </nav>
+                
+                <a href="tel:+905551234567" class="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg transition flex items-center gap-2">
+                    <span>📞</span>
+                    <span class="hidden sm:inline">Hemen Ara</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1625093440280-42de742a496d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920" alt="FB Teknik" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl animate-fade-in">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-orange-400 text-2xl">🔧</span>
+                    <span class="text-orange-400 font-semibold">Profesyonel Teknik Servis</span>
+                </div>
+                
+                <h2 class="text-5xl md:text-6xl font-bold mb-6">
+                    Beyaz Eşya ve Kombi Tamirinde Uzmanız
+                </h2>
+                
+                <p class="text-xl text-blue-100 mb-8">
+                    15 yıllık tecrübemizle tüm marka beyaz eşya, kombi ve klima tamiri, bakımı ve montaj hizmetleri. Aynı gün servis garantisi.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                    <div class="flex items-center gap-2">
+                        <span class="text-green-400">✓</span>
+                        <span>Uzman Teknik Kadro</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-green-400">✓</span>
+                        <span>Garantili İşçilik</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-green-400">✓</span>
+                        <span>Hızlı Servis</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-green-400">✓</span>
+                        <span>Uygun Fiyat</span>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#iletisim" class="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg text-center transition font-semibold">
+                        Hemen Randevu Al
+                    </a>
+                    <a href="tel:+905551234567" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-lg text-center transition font-semibold backdrop-blur-sm">
+                        Acil Servis: 0555 123 45 67
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="hizmetler" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Hizmetlerimiz</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Tüm marka ve model beyaz eşya, kombi ve klima tamiri için tek adresiniz
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1625093440280-42de742a496d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Çamaşır Makinesi Tamiri" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <div class="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xl">🧺</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Çamaşır Makinesi Tamiri</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tüm marka ve model çamaşır makinesi arıza tespiti, motor, pompa ve elektronik kart tamiri
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1768051579338-3dc694863efc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Buzdolabı Tamiri" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <div class="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xl">❄️</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Buzdolabı Tamiri</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Soğutma sistemi, termostat, kompresör tamiri ve gaz dolum işlemleri
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1729986694893-facaf4bce2e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Kombi Bakım ve Tamiri" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <div class="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xl">🔥</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Kombi Bakım ve Tamiri</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tüm marka kombi periyodik bakım, arıza tamiri, gaz kaçağı kontrolü ve petek temizliği
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1736390755053-f57997f7931b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Bulaşık Makinesi Tamiri" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <div class="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xl">🍽️</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Bulaşık Makinesi Tamiri</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Motor, pompa, elektronik kart ve su alma-tahliye sistemi tamiri
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1758774522618-6997310e9638?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Klima Bakım ve Montaj" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <div class="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xl">❄️</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Klima Bakım ve Montaj</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Split klima montaj, söküm, bakım, gaz dolum ve arıza tamiri
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1646023385379-00d0afb0319c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Fırın ve Ocak Tamiri" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <div class="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xl">🔥</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Fırın ve Ocak Tamiri</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Ankastre fırın, ocak, mikrodalga ve diğer küçük ev aletleri tamiri
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-blue-900 text-white rounded-2xl p-8 text-center animate-fade-in">
+                <h3 class="text-3xl font-bold mb-4">Servise Gelen Markalar</h3>
+                <div class="flex flex-wrap justify-center gap-6 text-lg">
+                    <span>Arçelik</span>
+                    <span>•</span>
+                    <span>Bosch</span>
+                    <span>•</span>
+                    <span>Siemens</span>
+                    <span>•</span>
+                    <span>Beko</span>
+                    <span>•</span>
+                    <span>Samsung</span>
+                    <span>•</span>
+                    <span>LG</span>
+                    <span>•</span>
+                    <span>Vestel</span>
+                    <span>•</span>
+                    <span>Altus</span>
+                    <span>•</span>
+                    <span>Vaillant</span>
+                    <span>•</span>
+                    <span>Baymak</span>
+                    <span>•</span>
+                    <span>Protherm</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="yorumlar" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Müşteri Yorumları</h2>
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <div class="flex gap-1">
+                        <span class="text-yellow-400 text-2xl">★</span>
+                        <span class="text-yellow-400 text-2xl">★</span>
+                        <span class="text-yellow-400 text-2xl">★</span>
+                        <span class="text-yellow-400 text-2xl">★</span>
+                        <span class="text-yellow-400 text-2xl">★</span>
+                    </div>
+                    <span class="text-2xl font-bold">5.0</span>
+                    <span class="text-gray-600">(8 yorum)</span>
+                </div>
+                <p class="text-xl text-gray-600">
+                    Müşteri memnuniyeti bizim için en önemli başarı göstergesidir
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+                    <div class="text-orange-200 text-4xl absolute top-4 right-4">"</div>
+                    <div class="flex items-start gap-3 mb-4 relative z-10">
+                        <div class="text-3xl">👨</div>
+                        <div class="flex-1">
+                            <h4 class="font-semibold">Mehmet Yılmaz</h4>
+                            <div class="flex gap-1 mb-1">
+                                <span class="text-yellow-400 text-sm">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-500">1 hafta önce</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed relative z-10">
+                        Kombimiz arızalandı, aynı gün geldiler ve sorunu çözdüler. Çok memnun kaldık, fiyatlar da makul. Teşekkürler FB Teknik!
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+                    <div class="text-orange-200 text-4xl absolute top-4 right-4">"</div>
+                    <div class="flex items-start gap-3 mb-4 relative z-10">
+                        <div class="text-3xl">👩</div>
+                        <div class="flex-1">
+                            <h4 class="font-semibold">Ayşe Demir</h4>
+                            <div class="flex gap-1 mb-1">
+                                <span class="text-yellow-400 text-sm">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-500">2 hafta önce</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed relative z-10">
+                        Çamaşır makinesi tamiri için aradım. Hızlı ve profesyonel hizmet, garantili işçilik. Kesinlikle tavsiye ederim.
+                    </p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+                    <div class="text-orange-200 text-4xl absolute top-4 right-4">"</div>
+                    <div class="flex items-start gap-3 mb-4 relative z-10">
+                        <div class="text-3xl">👨‍🦱</div>
+                        <div class="flex-1">
+                            <h4 class="font-semibold">Ahmet Kaya</h4>
+                            <div class="flex gap-1 mb-1">
+                                <span class="text-yellow-400 text-sm">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-500">3 gün önce</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed relative z-10">
+                        Buzdolabımız soğutmuyordu. Gaz dolumu yaptılar, her şey mükemmel çalışıyor. Uzman ve güvenilir bir firma.
+                    </p>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+                    <div class="text-orange-200 text-4xl absolute top-4 right-4">"</div>
+                    <div class="flex items-start gap-3 mb-4 relative z-10">
+                        <div class="text-3xl">👩‍🦰</div>
+                        <div class="flex-1">
+                            <h4 class="font-semibold">Zeynep Arslan</h4>
+                            <div class="flex gap-1 mb-1">
+                                <span class="text-yellow-400 text-sm">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-500">1 ay önce</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed relative z-10">
+                        Klima montajı için geldiler. İşlerini çok temiz yapıyorlar, sonuç harika. Fiyat/performans olarak çok iyi.
+                    </p>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+                    <div class="text-orange-200 text-4xl absolute top-4 right-4">"</div>
+                    <div class="flex items-start gap-3 mb-4 relative z-10">
+                        <div class="text-3xl">👨‍💼</div>
+                        <div class="flex-1">
+                            <h4 class="font-semibold">Can Öztürk</h4>
+                            <div class="flex gap-1 mb-1">
+                                <span class="text-yellow-400 text-sm">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-500">2 hafta önce</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed relative z-10">
+                        Bulaşık makinesi elektronik kartı arızalıydı. Kısa sürede temin edip taktılar. Gerçekten işinin ehli bir ekip.
+                    </p>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+                    <div class="text-orange-200 text-4xl absolute top-4 right-4">"</div>
+                    <div class="flex items-start gap-3 mb-4 relative z-10">
+                        <div class="text-3xl">👩‍💻</div>
+                        <div class="flex-1">
+                            <h4 class="font-semibold">Elif Şahin</h4>
+                            <div class="flex gap-1 mb-1">
+                                <span class="text-yellow-400 text-sm">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-500">5 gün önce</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed relative z-10">
+                        Fırınım çalışmıyordu. Hemen geldiler ve tamir ettiler. Çok ilgili ve güler yüzlü bir servis. Tekrar tercih ederim.
+                    </p>
+                </div>
+
+                <!-- Review 7 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+                    <div class="text-orange-200 text-4xl absolute top-4 right-4">"</div>
+                    <div class="flex items-start gap-3 mb-4 relative z-10">
+                        <div class="text-3xl">👨‍🔧</div>
+                        <div class="flex-1">
+                            <h4 class="font-semibold">Mustafa Yıldız</h4>
+                            <div class="flex gap-1 mb-1">
+                                <span class="text-yellow-400 text-sm">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-500">3 hafta önce</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed relative z-10">
+                        Kombi bakımı için aradım, randevu verip zamanında geldiler. Detaylı kontrol yaptılar. Çok memnunum.
+                    </p>
+                </div>
+
+                <!-- Review 8 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+                    <div class="text-orange-200 text-4xl absolute top-4 right-4">"</div>
+                    <div class="flex items-start gap-3 mb-4 relative z-10">
+                        <div class="text-3xl">👩‍🏫</div>
+                        <div class="flex-1">
+                            <h4 class="font-semibold">Fatma Aydın</h4>
+                            <div class="flex gap-1 mb-1">
+                                <span class="text-yellow-400 text-sm">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-500">1 hafta önce</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed relative z-10">
+                        Çamaşır makinesi motoru arızalıydı. Uygun fiyata değiştirdiler ve garanti verdiler. Harika bir hizmet!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://maps.app.goo.gl/d5PoHdHft7KMHXcE7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg transition font-semibold">
+                    <span>Tüm Yorumları Google'da Gör</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="iletisim" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">İletişim</h2>
+                <p class="text-xl text-gray-600">
+                    7/24 acil servis hizmeti için bize ulaşın
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg mb-8">
+                        <h3 class="text-2xl font-bold mb-6">İletişim Bilgileri</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-orange-100 p-3 rounded-lg">
+                                    <span class="text-orange-600 text-2xl">📞</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Telefon (7/24)</h4>
+                                    <a href="tel:+905551234567" class="text-gray-600 hover:text-orange-600 transition block">
+                                        +90 (555) 123 45 67
+                                    </a>
+                                    <a href="tel:+902121234567" class="text-gray-600 hover:text-orange-600 transition block">
+                                        +90 (212) 123 45 67
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="bg-orange-100 p-3 rounded-lg">
+                                    <span class="text-orange-600 text-2xl">✉️</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">E-posta</h4>
+                                    <a href="mailto:info@fbteknik.com" class="text-gray-600 hover:text-orange-600 transition">
+                                        info@fbteknik.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="bg-orange-100 p-3 rounded-lg">
+                                    <span class="text-orange-600 text-2xl">📍</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Adres</h4>
+                                    <p class="text-gray-600">
+                                        Örnek Mahallesi, Teknik Sokak No:45<br>
+                                        Kadıköy, İstanbul
+                                    </p>
+                                    <a href="https://maps.app.goo.gl/d5PoHdHft7KMHXcE7" target="_blank" rel="noopener noreferrer" class="text-orange-600 hover:text-orange-700 text-sm mt-1 inline-block">
+                                        Haritada Gör →
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="bg-orange-100 p-3 rounded-lg">
+                                    <span class="text-orange-600 text-2xl">🕐</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Çalışma Saatleri</h4>
+                                    <p class="text-gray-600">
+                                        Pazartesi - Cumartesi: 08:00 - 20:00<br>
+                                        Pazar: 09:00 - 18:00
+                                    </p>
+                                    <p class="text-orange-600 font-semibold mt-1">
+                                        Acil Servis: 7/24
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg h-64">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.7461234567890!2d29.0244!3d41.0082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzI5LjUiTiAyOcKwMDEnMjcuOCJF!5e0!3m2!1str!2str!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6">Randevu Talebi</h3>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2 font-semibold">
+                                Adınız Soyadınız
+                            </label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition" placeholder="Adınız Soyadınız">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block mb-2 font-semibold">
+                                Telefon
+                            </label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition" placeholder="+90 (5XX) XXX XX XX">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block mb-2 font-semibold">
+                                E-posta
+                            </label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition" placeholder="ornek@email.com">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block mb-2 font-semibold">
+                                Arıza Detayı
+                            </label>
+                            <textarea id="message" name="message" required rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition resize-none" placeholder="Lütfen cihazınızın markası, modeli ve arıza detayını belirtin..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-lg transition flex items-center justify-center gap-2 font-semibold">
+                            <span>✉️</span>
+                            Randevu Talebi Gönder
+                        </button>
+                    </form>
+                    
+                    <div class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <p class="text-sm text-blue-800">
+                            <strong>💡 Not:</strong> Acil durumlar için lütfen direkt telefon ile arayınız. Randevu talepleri 1-2 saat içinde yanıtlanır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                            <span class="text-xl">🔧</span>
+                        </div>
+                        <h3 class="font-bold text-xl">FB Teknik</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        15 yıllık tecrübemizle tüm marka beyaz eşya, kombi ve klima tamirinde güvenilir çözüm ortağınız.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Hızlı Bağlantılar</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#hizmetler" class="text-gray-400 hover:text-white transition">
+                                Hizmetlerimiz
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#yorumlar" class="text-gray-400 hover:text-white transition">
+                                Müşteri Yorumları
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#iletisim" class="text-gray-400 hover:text-white transition">
+                                İletişim
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/d5PoHdHft7KMHXcE7" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+                                Google Maps
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">İletişim</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-gray-400">
+                            <span>📞</span>
+                            <a href="tel:+905551234567" class="hover:text-white transition">
+                                +90 (555) 123 45 67
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-400">
+                            <span>✉️</span>
+                            <a href="mailto:info@fbteknik.com" class="hover:text-white transition">
+                                info@fbteknik.com
+                            </a>
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-400">
+                            <span>📍</span>
+                            <span>Örnek Mah. Teknik Sok. No:45<br>Kadıköy, İstanbul</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 FB Teknik - Beyaz Eşya & Kombi Servisi. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mesajınız alındı! En kısa sürede size dönüş yapacağız.');
+            this.reset();
+        });
+
+        // Animate on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+
+</body>
+</html>
